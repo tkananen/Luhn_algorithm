@@ -9,9 +9,6 @@ public class Luhn_Algorithm {
 		
 		
 		
-		
-		
-		//getcheckDigit(getCard()
 			
 		
 				
