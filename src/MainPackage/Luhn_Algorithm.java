@@ -1,4 +1,4 @@
-package MainPackage;
+ package MainPackage;
 import java.util.Scanner;
 
 public class Luhn_Algorithm {
