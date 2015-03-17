@@ -34,12 +34,19 @@ public class Luhn_TestFile extends Luhn_Algorithm {
 		int correcttempVar = 67;
 		
 		
+		// Checks to see if the correctaccount  matches what getCard returns 
 		
 		equals(correctAccount == getCard() );
 		
+		// Checks to see if checkdigit returns the correct digit
+		
 		equals(getcheckDigit(correctAccount) == correctCheck);
 		
+		//Checks if the sum of the account numbers are good.
+		
 		equals(calculateSum(correctAccount) == correctsumNum);
+		
+		// Compares the checksum to the tempvar.
 		
 		equals(calculateCheckSum(correctsumNum) == correcttempVar);
 			
@@ -52,11 +59,20 @@ public class Luhn_TestFile extends Luhn_Algorithm {
 		int correctCheck = 3;
 		int correctsumNum = 67;
 		int correcttempVar = 67;		
+		
+		
+		// Makes sure the false account is not the same thing as correct.  Please enter 79927398713 when prompted.
 		assertFalse(falseAccount == getCard());
+		
+		//Checks the check digit against the correct check.
 		
 		assertFalse(getcheckDigit(falseAccount) == correctCheck);
 		
+		//Checks the sum of the false account to the correct sum.
+		
 		assertFalse(calculateSum(falseAccount) == correctsumNum);
+		
+		//Checks the checksum to the correct tempvar.
 		
 		assertFalse(calculateCheckSum(correctsumNum) == correcttempVar);
 		

@@ -2,9 +2,7 @@
 import java.util.Scanner;
 
 public class Luhn_Algorithm {
-	public static void main(String [] args){
-				// 79927398713
-		// 31789372997 	
+	public static void main(String [] args){	
 		finalCheck(calculateCheckSum(calculateSum(getCard())),getcheckDigit(getCard()));
 		
 		
@@ -68,23 +66,3 @@ public class Luhn_Algorithm {
 		
 	}
 	}
-	
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
-
-
